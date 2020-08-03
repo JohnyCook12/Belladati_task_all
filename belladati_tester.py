@@ -1,9 +1,9 @@
 from selenium import webdriver
 from datetime import date
 import logging, csv, sys, time
-logging.basicConfig(level= logging.INFO,
-                    filename= "scraper.log",
-                    format="format='%(asctime)s :: %(levelname)s :: %(name)s :: Line No %(lineno)d :: %(message)s")
+# logging.basicConfig(level= logging.INFO,
+#                     filename= "scraper.log",
+#                     format="format='%(asctime)s :: %(levelname)s :: %(name)s :: Line No %(lineno)d :: %(message)s")
 
 driver = webdriver.Chrome(r'chromedriver_win32\chromedriver.exe')
 driver.maximize_window()
