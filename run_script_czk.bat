@@ -1,3 +1,3 @@
 @ECHO OFF
-"venv\Scripts\activate.bat" && python "scraper.py"
+"venv\Scripts\activate.bat" && python "belladati_tester.py"
 PAUSE
