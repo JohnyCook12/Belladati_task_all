@@ -20,34 +20,10 @@ class WebScraper:
     def __init__(self, instance_name, address_to_scrape):
 
         self.instance_name = instance_name
-        logging.info("\n------ STARTING {} ------".format(self.instance_name))
-        print("\n------ STARTING {} ------".format(self.instance_name))
 
         self.webaddresss = address_to_scrape
         driver.get(self.webaddresss)
 
-
-        # ZBYTKY Z CEKYHO SCRAPERU:
-
-        # # scrape update time, table length
-        # self.updateTime = driver.find_element_by_xpath('//*[@id="post-9"]/div/div/div[2]/p[3]')
-        # self.table = driver.find_element_by_xpath(self.table_xpath)
-        # self.table_length = len(self.table.find_elements_by_xpath(".//tr"))-3
-        #
-        # # create empty lists
-        # self.residualMaturity = list(range(1, self.table_length + 1))      # empty list
-        # self.bondYield = list(range(1, self.table_length + 1))
-        #
-        # logging.info("table length -3 = {length}".format(length = self.table_length))
-        #
-        # # SCRAPE data to lists
-        # for i in range(self.table_length):
-        #     self.residualMaturity[i] = driver.find_element_by_xpath(self.table_xpath + '/tbody/tr[' + str(self.table_length-i) + ']/td[2]/a/b').text
-        #     self.bondYield[i] = driver.find_element_by_xpath(self.table_xpath + '/tbody/tr[' + str(self.table_length-i) + ']/td[3]/b').text
-        #
-        # logging.info(self.table_length)
-        # print(self.bondYield)
-        #
 
     def belladati_login(self, login_input, password_input):
 
