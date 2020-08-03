@@ -71,7 +71,6 @@ class WebScraper:
 
 
 
-
 def main():
 
 
